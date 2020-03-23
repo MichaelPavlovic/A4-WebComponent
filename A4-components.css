@@ -1,0 +1,38 @@
+﻿/*ASSIGNMENT 4 WEB COMPONENTS*/
+#clock{
+    padding:0.5em;
+    background-color:#00275E;
+    border:5px solid #DEB406;
+    border-radius:10px;
+    width:350px;
+    height:200px;
+    float:right;
+    font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+    position:fixed;
+    top:20px;
+    right:20px;
+}
+#clock img{
+    width:340px;
+}
+#countdown{
+    margin:0.7em 1em 1em 1em;
+    padding:0.5em;
+    background-color:white;
+    text-align:center;
+    font-size:18pt;
+}
+#caption{
+    color:#00A2E8;
+    margin-left:2em;
+    font-size:16pt;
+}
+#caption-black{
+    background-color:black;
+    padding:0.3em 0.5em;
+}
+#caption-white{
+    background-color:white;
+    padding:0.3em 0.5em;
+}
