@@ -15,28 +15,16 @@ class HumberClock extends HTMLElement{
         style.setAttribute('rel', 'stylesheet');
         style.setAttribute('href', 'A4-components.css');
 
-        //appent to shadow root
+        //append to shadow root
         shadowRoot.appendChild(style);
         shadowRoot.appendChild(templateContent.cloneNode(true));
     }
     connectedCallback(){
+        //get the countdown div from the template
         const count = this.shadowRoot.getElementById('countdown');
 
         setInterval(function(){
-            let current = new Date();
-            let hours = current.getHours();
-            let minutes = current.getMinutes();
-            let seconds = current.getSeconds();
-
-            if(minutes < 10 ){
-                minutes = '0' + minutes;
-            }
-
-            if(seconds < 10){
-                seconds = '0' + seconds;
-            }
-
-            count.innerHTML = hours + ":" + minutes + ":" + seconds;
+            count.innerHTML = myModule.getTime(); 
         }, 1000);
     }
 }
